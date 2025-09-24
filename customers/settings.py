@@ -10,10 +10,9 @@ from urllib.parse import urlparse, parse_qsl
 # Build paths inside the project
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Load environment variables
 load_dotenv()
 
-# SECURITY WARNING: keep the secret key used in production secret!
+
 SECRET_KEY = os.getenv("SECRET_KEY", "django-insecure-yd1o53nio-@xw^^1w7k*u92rhn8d0x6g!%lu9ejym(w6-zsou1")
 
 # SECURITY WARNING: don't run with debug turned on in production!
