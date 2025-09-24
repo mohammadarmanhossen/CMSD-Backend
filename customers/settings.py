@@ -20,6 +20,7 @@ SECRET_KEY = os.getenv("SECRET_KEY", "django-insecure-yd1o53nio-@xw^^1w7k*u92rhn
 DEBUG = os.getenv("DEBUG", "True") == "True"
 
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",") if os.getenv("ALLOWED_HOSTS") else []
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "cmsd-backend.onrender.com"]
 
 # Application definition
 INSTALLED_APPS = [
